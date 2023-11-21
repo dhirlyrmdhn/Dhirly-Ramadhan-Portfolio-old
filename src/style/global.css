@@ -90,3 +90,7 @@ body.light-mode {
 .text-center {
     text-align: center;
 }
+
+.gap-small {
+    gap: 12px;
+}
