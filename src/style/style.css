@@ -45,3 +45,10 @@
     background: transparent;
 }
 
+
+/*  */
+.toggle {
+    width: 100%;
+    justify-content: end;
+}
+
