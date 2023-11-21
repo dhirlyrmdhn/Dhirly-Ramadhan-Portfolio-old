@@ -37,8 +37,41 @@ body.light-mode {
     /* Add light mode specific variables here if needed */
 }
 
+.wrapper {
+    height: 100%;
+    width: 100%;
+}
+
+.content {
+    height: max-content;
+    width: max-content;
+}
+
 .flex {
     display: flex;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.center-parent {
+    align-items: center;
+    justify-content: center;
+}
+
+.center-children {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.center-x {
+    margin: 0 auto;
 }
 
 .absolute {
