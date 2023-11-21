@@ -1,1 +1,47 @@
+.intro {
+    position: fixed;
+    z-index: 9999999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: #161616;
+    transition: 1s;
+}
+
+.logo-header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff !important;
+    display: flex;
+    gap: 2px;
+}
+
+.logo {
+    color: #fff !important;
+    font-family: 'Titillium Web', sans-serif;
+    position: relative;
+    display: inline-block;
+    bottom: -20%;
+    opacity: 0;
+}
+
+.logo.active {
+    bottom: 0px;
+    opacity: 1;
+    transition: ease-in-out 0.5s;
+}
+
+.logo.fade {
+    bottom: 150px;
+    opacity: 0;
+    transition: ease-in-out 0.5s;
+}
+
+.logo.none {
+    color: transparent !important;
+    background: transparent;
+}
 
