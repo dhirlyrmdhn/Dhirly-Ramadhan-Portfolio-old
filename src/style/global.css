@@ -5,8 +5,36 @@
 }
 
 body {
+    transition: background-color 0.5s, color 0.5s;
+    background-color: var(--background);
+    color: var(--text-primary);
     margin: 0;
     padding: 0;
+}
+
+body.dark-mode {
+    --background: #121212;
+    --card-background: #424242;
+    --text-primary: #FFFFFF;
+    --text-secondary: #B0B0B0;
+    --primary-accent: #1976D2;
+    --secondary-accent: #FFA000;
+    --primary-button: #1976D2;
+    --secondary-button: #FFA000;
+    --border: #616161;
+}
+
+body.light-mode {
+    --background: blue;
+    --card-background: #F5F5F5;
+    --text-primary: #333333;
+    --text-secondary: #757575;
+    --primary-accent: #2196F3;
+    --secondary-accent: #FFC107;
+    --primary-button: #2196F3;
+    --secondary-button: #FFC107;
+    --border: #E0E0E0;
+    /* Add light mode specific variables here if needed */
 }
 
 .flex {

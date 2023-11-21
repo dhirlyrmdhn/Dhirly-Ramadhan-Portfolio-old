@@ -53,3 +53,7 @@
     justify-content: end;
 }
 
+.toggle {
+    cursor: pointer;
+}
+
