@@ -94,3 +94,7 @@ body.light-mode {
 .gap-small {
     gap: 12px;
 }
+
+.gap-medium {
+    gap: 16px;
+}
