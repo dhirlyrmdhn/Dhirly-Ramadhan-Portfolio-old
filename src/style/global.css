@@ -13,7 +13,7 @@ body {
 }
 
 body.dark-mode {
-    --background: #121212;
+    --background: #161616;
     --card-background: #424242;
     --text-primary: #FFFFFF;
     --text-secondary: #B0B0B0;
@@ -25,7 +25,7 @@ body.dark-mode {
 }
 
 body.light-mode {
-    --background: blue;
+    --background: #FFFFFF;
     --card-background: #F5F5F5;
     --text-primary: #333333;
     --text-secondary: #757575;
