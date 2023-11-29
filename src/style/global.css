@@ -5,6 +5,11 @@
     transition: .2s;
 }
 
+::selection {
+    background: gray;
+    color: white;
+}
+
 body {
     /* transition: background-color 0.5s, color 0.5s; */
     background-color: var(--background);
@@ -15,27 +20,26 @@ body {
 
 body.dark-mode {
     --background: #161616;
-    --card-background: #424242;
+    --fore-background: #424242;
     --text-primary: #FFFFFF;
     --text-secondary: #B0B0B0;
     --primary-accent: #1976D2;
     --secondary-accent: #FFA000;
     --primary-button: #1976D2;
     --secondary-button: #FFA000;
-    --border: #616161;
+    --border: 1px solid #616161;
 }
 
 body.light-mode {
-    --background: #FFFFFF;
-    --card-background: #F5F5F5;
-    --text-primary: #333333;
-    --text-secondary: #757575;
+    --background: #FAFAFA;
+    --fore-background: #FFFFFF;
+    --text-primary: #171717;
+    --text-secondary: #666666;
     --primary-accent: #2196F3;
     --secondary-accent: #FFC107;
     --primary-button: #2196F3;
     --secondary-button: #FFC107;
-    --border: #E0E0E0;
-    /* Add light mode specific variables here if needed */
+    --border: 1px solid #00000014;
 }
 
 .wrapper {
@@ -84,6 +88,7 @@ body.light-mode {
 }
 
 .text-title {
+    /* font-size: 1.5rem; */
     font-size: 1.875rem;
 }
 
