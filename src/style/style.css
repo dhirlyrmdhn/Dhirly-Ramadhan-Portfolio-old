@@ -21,9 +21,10 @@
 }
 
 .logo {
+    font-weight: bold;
     font-size: 1.5em;
     color: #fff !important;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Syne', sans-serif;
     position: relative;
     display: inline-block;
     bottom: 0;
