@@ -83,8 +83,12 @@ body.light-mode {
     position: absolute;
 }
 
+.full-screen-height * {
+    transition: .2s;
+}
+
 .full-screen-height {
-    height: 100vh;
+    height: 100vh; 
 }
 
 .text-title {

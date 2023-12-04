@@ -1,4 +1,3 @@
-/*  */
 .intro {
     position: fixed;
     z-index: 999;
@@ -21,10 +20,9 @@
 }
 
 .logo {
-    /* font-weight: bold; */
     font-size: 24px;
+    font-family: 'Poppins', sans-serif;
     color: #fff !important;
-    /* font-family: 'Saira Extra Condensed', sans-serif; */
     position: relative;
     display: inline-block;
     bottom: 0;
