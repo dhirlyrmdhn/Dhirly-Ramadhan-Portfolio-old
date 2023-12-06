@@ -1,8 +1,7 @@
 * {
     box-sizing: border-box;
     position: relative;
-    /* font-family: 'Poppins', sans-serif; */
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     transition: .2s;
 }
 
