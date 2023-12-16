@@ -1,31 +1,21 @@
-let intro = document.querySelector('.intro');
-let logo = document.querySelector('.logo-header');
-let logoSpan = document.querySelectorAll('.logo');
+window.addEventListener("DOMContentLoaded", () => {
 
-window.addEventListener('DOMContentLoaded', () => {
+    let preloaderTitle = document.getElementById("preloader-title");
 
     setTimeout(() => {
+        preloaderTitle.classList.add("active");
+    }, 500);
 
-        logoSpan.forEach((span, idx) => {
-            setTimeout(() => {
-                span.classList.toggle('active');
-            }, (idx + 1) * 300)
-        });
+    setTimeout(() => {
+        let preloaderBottomContent = document.getElementById("bottom-content");
+        let preloaderThemesMode = document.getElementById("themes-mode");
+        preloaderBottomContent.classList.add("active");
+        preloaderThemesMode.classList.add("active");
+    }, 2000);
 
-        setTimeout(() => {
-            logoSpan.forEach((span, idx) => {
-
-                setTimeout(() => {
-                    span.classList.remove('active');
-                    span.classList.toggle('fade');
-                }, (idx + 1) * 50 )
-            })
-        }, 6000);
-
-        setTimeout(() => {
-            intro.style.top = '-100vh';
-        }, 6500)
-
-    })
+    setTimeout(() => {
+        let preloaderScrollDown = document.getElementById("scroll-down");
+        preloaderScrollDown.classList.add("active");
+    }, 2000 + 1500);
 
 })

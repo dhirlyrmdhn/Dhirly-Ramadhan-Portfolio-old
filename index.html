@@ -9,82 +9,71 @@
     <link rel="stylesheet" href="src/style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
 <body>
     <div id="app">
         <div class="container">
 
-            <div class="intro">
-                <span class="logo-header">
-                    <span class="logo">D</span>
-                    <span class="logo">h</span>
-                    <span class="logo">i</span>
-                    <span class="logo">r</span>
-                    <span class="logo">l</span>
-                    <span class="logo">y</span>
-                    <span class="logo none">.</span>
-                    <span class="logo">R</span>
-                    <span class="logo">a</span>
-                    <span class="logo">m</span>
-                    <span class="logo">a</span>
-                    <span class="logo">d</span>
-                    <span class="logo">h</span>
-                    <span class="logo">a</span>
-                    <span class="logo">n</span>
-                </span>
-            </div>
-
-            <main id="main" class="main">
-                <section class="landing-page full-screen-height" id="landing-page">
-
-                    <div class="toggle-mode flex absolute">
-                        <span class="toggle" onclick="toggleTheme()">
+            <section class="preloader full-screen-height" id="preloader">
+                <div class="wrapper padding-medium flex">
+                    <div class="center-children text-title absolute flex center-parent" id="preloader-title">
+                        Dhirly Ramadhan
+                    </div>
+                </div>
+                <div class="absolute bottom width" id="bottom-content">
+                    <div class="flex center-parent space-between padding-medium">
+                        <div class="text-small">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br>Provident, sed?
+                        </div>
+                        <div class="absolute center-children">
+                            <div class="circle border flex center-parent" id="scroll-down">
+                                <span class="material-symbols-outlined">
+                                    south
+                                </span>
+                            </div>
+                        </div>
+                        <div class="text-small flex center-parent">
                             <span class="material-symbols-outlined">
-                                light_mode
+                                location_on
                             </span>
-                            <span class="material-symbols-outlined">
-                                dark_mode
-                            </span>
+                            Bandung, Indonesia
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <nav class="nav flex gap-medium width justify-content-end padding-medium" id="nav">
+                <div class="menu-toggle absolute" id="menu-toggle">
+                    <div class="padding-medium">
+                        <span class="material-symbols-outlined">
+                            menu
                         </span>
                     </div>
+                </div>
+                <div class="flex gap padding-small" id="themes-mode" onclick="toggleTheme()">
+                    <span class="material-symbols-outlined">
+                        light_mode
+                    </span>
+                    <span class="material-symbols-outlined">
+                        dark_mode
+                    </span>
+                </div>
+            </nav>
 
-                    <!-- <div class="absolute background-gradient idx1"></div>
-                    <div class="absolute background-gradient idx2"></div> -->
-
-                    <div class="wrapper flex center-parent column gap-small">
-                        <div class="content flex column text-center">
-                            <span class="text-title">
-                                Hi! I'm Dhirly Ramadhan,
-                            </span>
-                            <span class="text-title">
-                                a full stack developer
-                            </span>
-                        </div>
-                        <!-- <span class="content flex gap-medium">
-                            <span class="bar">
-                                about me
-                            </span>
-                            <span class="bar">
-                                work
-                            </span>
-                            <span class="bar">
-                                contact
-                            </span>
-                        </span> -->
-                    </div>
-
-                </section>
-
-            </main>
+            <section class="landing-page wide-screen-height" id="landing-page"></section>
 
         </div>
 
-        <script src="src/script/preloader.js"></script>
         <script src="src/script/themes.js"></script>
+        <script src="src/script/preloader.js"></script>
+        <script src="src/script/navbar.js"></script>
+        <script src="src/script/index.js"></script>
 
     </div>
 </body>
