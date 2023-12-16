@@ -1,4 +1,8 @@
 @media screen and (max-width: 767px) {
+    .text-title {
+        font-size: 16px;
+    }
+    
     .preloader .text-small {
         display: none;
     }
