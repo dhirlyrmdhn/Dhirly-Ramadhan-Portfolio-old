@@ -3,6 +3,7 @@
     position: relative;
     font-family: 'Open Sans', sans-serif;
     transition: .2s;
+    scroll-behavior: smooth;
 }
 
 ::selection {
@@ -68,6 +69,10 @@ body.light-mode {
 
 .flex-1 {
     flex: 1;
+}
+
+.flex-2 {
+    flex: 2;
 }
 
 .row {
@@ -177,4 +182,9 @@ a.button.cta {
 
 .border {
     border: 1px solid var(--text-secondary);
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-primary);
 }

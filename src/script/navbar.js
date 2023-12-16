@@ -18,5 +18,5 @@ window.addEventListener("scroll", () => {
 
 let scrolllDown = document.getElementById("scroll-down");
 scrolllDown.addEventListener("click", () => {
-    window.scrollTo(0, 1);
+    window.scrollTo(0, 2);
 });

@@ -6,4 +6,16 @@
     .preloader .text-small {
         display: none;
     }
+
+    .wide-screen-height {
+        aspect-ratio: 3 / 4;
+    }
+
+    .row-responsive {
+        flex-direction: column;
+    }
+
+    .responsive-none {
+        display: none;
+    }
 }

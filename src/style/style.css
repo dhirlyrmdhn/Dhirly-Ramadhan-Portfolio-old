@@ -68,12 +68,14 @@
 }
 
 #themes-mode {
+    display: none;
     cursor: pointer;
     border-radius: 100px;
     opacity: 0;
 }
 
 #themes-mode.active {
+    display: flex;
     opacity: 1;
 }
 
@@ -102,4 +104,37 @@ body.dark-mode #themes-mode {
 
 #menu-toggle.active {
     width: 61px;
+}
+
+#nav,
+#preloader {
+    z-index: 99;
+}
+
+#landing-page .gap {
+    gap: 30px;
+}
+
+#photos-screen {}
+
+#photos-screen .wrapper .photos {
+    background: var(--text-secondary);
+}
+
+#photos-screen .wrapper .photos.flex-1 {
+    aspect-ratio: 4 / 3 ;
+}
+
+#navigation-dots {
+    height: 100%;
+}
+
+#navigation-dots .dots {
+    aspect-ratio: 1 / 1;
+    height: 4px;
+    /* border: 1px solid var(--text-secondary); */
+}
+
+#mail {
+    align-items: center;
 }
