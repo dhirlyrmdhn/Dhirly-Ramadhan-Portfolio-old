@@ -4,6 +4,7 @@
     font-family: 'Open Sans', sans-serif;
     transition: .2s;
     scroll-behavior: smooth;
+    z-index: 1;
 }
 
 ::selection {
@@ -18,6 +19,7 @@ body {
     padding: 0;
     --small: 8px;
     --medium: 16px;
+    overflow-x: hidden;
 }
 
 body.dark-mode {
@@ -104,6 +106,10 @@ body.light-mode {
 
 .justify-content-end {
     justify-content: end;
+}
+
+.end-align-parent {
+    align-items: end;
 }
 
 .gap-box-medium {
@@ -198,7 +204,7 @@ a {
 }
 
 .text-color-gradient {
-    background: var(--secondary-accent);
+    background: var(--primary-accent);
     -webkit-background-clip: text;
     color: transparent;
 }

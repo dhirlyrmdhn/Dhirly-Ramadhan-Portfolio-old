@@ -88,8 +88,8 @@
 
 body.light-mode #themes-mode {
     background: linear-gradient(145deg, #e1e1e1, #ffffff);
-    box-shadow: 7px 7px 14px #d5d5d5,
-        -7px -7px 14px #ffffff;
+    /* box-shadow: 7px 7px 14px rgba(214, 214, 214, 0.5),
+        -7px -7px 14px rgba(214, 214, 214, 0.5); */
 }
 
 body.dark-mode #themes-mode {
@@ -120,7 +120,34 @@ body.dark-mode #themes-mode {
     z-index: 99;
 }
 
-#landing-page {}
+/* #landing-page::before {
+    content: '';
+    position: absolute;
+    width: 500px;
+    aspect-ratio: 1 / 1;
+    border-radius: 100%;
+    background: radial-gradient(pink, transparent);
+    filter: blur(50px);
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+#landing-page::after {
+    content: '';
+    position: absolute;
+    width: 500px;
+    aspect-ratio: 1 / 1;
+    border-radius: 100%;
+    background: radial-gradient(aqua, transparent);
+    opacity: .5;
+    filter: blur(50px);
+    top: 60%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+} */
 
 #landing-page .gap {
     gap: 30px;
@@ -129,11 +156,14 @@ body.dark-mode #themes-mode {
 #photos-screen {}
 
 #photos-screen .wrapper .photos {
-    background: var(--text-secondary);
+    /* background: url(../assets/3d-geometric-abstract-background.jpg); */
+    background: whitesmoke;
+    background-position: center;
+    background-size: cover;
 }
 
 #photos-screen .wrapper .photos.flex-1 {
-    aspect-ratio: 4 / 3 ;
+    aspect-ratio: 16 / 9;
 }
 
 #navigation-dots {
@@ -148,4 +178,8 @@ body.dark-mode #themes-mode {
 
 #mail {
     align-items: center;
+}
+
+#footer {
+    overflow: hidden;
 }
