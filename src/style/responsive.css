@@ -1,0 +1,5 @@
+@media screen and (max-width: 767px) {
+    .preloader .text-small {
+        display: none;
+    }
+}
