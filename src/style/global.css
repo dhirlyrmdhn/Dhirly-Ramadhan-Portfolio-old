@@ -45,9 +45,9 @@ body.light-mode {
 }
 
 
-.container {
+/* .container {
     min-height: 200vh;
-}
+} */
 
 .wrapper {
     height: 100%;
@@ -123,8 +123,16 @@ body.light-mode {
     height: 100vh; 
 }
 
+.ultrawide-screen-height {
+    aspect-ratio: 32 / 9;
+}
+
 .wide-screen-height {
     aspect-ratio: 21 / 9;
+}
+
+.screen-height {
+    aspect-ratio: 16 / 9;
 }
 
 .text-title {
@@ -187,4 +195,18 @@ a.button.cta {
 a {
     text-decoration: none;
     color: var(--text-primary);
+}
+
+.text-color-gradient {
+    background: var(--secondary-accent);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+#footer {
+    bottom: 0;
+}
+
+.text-full-screen {
+    font-size: 22vw;
 }

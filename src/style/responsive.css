@@ -1,6 +1,6 @@
 @media screen and (max-width: 767px) {
     .text-title {
-        font-size: 24px;
+        font-size: 16px;
     }
     
     .preloader .text-small {
@@ -17,5 +17,11 @@
 
     .responsive-none {
         display: none;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    .text-title {
+        /* font-size: 32px; */
     }
 }
