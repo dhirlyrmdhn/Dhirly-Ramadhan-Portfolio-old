@@ -121,6 +121,10 @@ body.dark-mode #themes-mode {
     z-index: 99;
 }
 
+#landing-page {
+    padding-bottom: 2%;
+}
+
 #landing-page 
 .text-typhograpy {
     font-family: 'Roboto Condensed', sans-serif;
