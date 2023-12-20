@@ -2,7 +2,7 @@
     .text-title {
         font-size: 16px;
     }
-    
+
     .preloader .text-small {
         display: none;
     }
@@ -17,6 +17,10 @@
 
     .responsive-none {
         display: none;
+    }
+
+    #landing-page .text-typhograpy {
+        font-size: 20vw;
     }
 }
 

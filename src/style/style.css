@@ -13,12 +13,12 @@
 }
 
 #preloader-title {
-    height: 0;
+    height: max-content;
     overflow: hidden;
 }
 
 #preloader-title.active {
-    height: 33px;
+    height: max-content;
     transition: 1s;
 }
 
@@ -87,9 +87,10 @@
 }
 
 body.light-mode #themes-mode {
-    background: linear-gradient(145deg, #e1e1e1, #ffffff);
-    /* box-shadow: 7px 7px 14px rgba(214, 214, 214, 0.5),
-        -7px -7px 14px rgba(214, 214, 214, 0.5); */
+    border-radius: 50px;
+    background: linear-gradient(145deg, #cacaca, #ffffff);
+    box-shadow: 5px 5px 10px #bebebe,
+        -5px -5px 10px #ffffff;
 }
 
 body.dark-mode #themes-mode {
@@ -120,66 +121,21 @@ body.dark-mode #themes-mode {
     z-index: 99;
 }
 
-/* #landing-page::before {
-    content: '';
-    position: absolute;
-    width: 500px;
-    aspect-ratio: 1 / 1;
-    border-radius: 100%;
-    background: radial-gradient(pink, transparent);
-    filter: blur(50px);
-    top: 40%;
-    left: 40%;
-    transform: translate(-50%, -50%);
-    z-index: 0;
+#landing-page 
+.text-typhograpy {
+    font-family: 'Roboto Condensed', sans-serif;
+    /* font-weight: 700; */
+    font-size: 8vw;
+    text-transform: capitalize;
+    margin: -16px 0;
 }
 
-#landing-page::after {
-    content: '';
-    position: absolute;
-    width: 500px;
-    aspect-ratio: 1 / 1;
-    border-radius: 100%;
-    background: radial-gradient(aqua, transparent);
-    opacity: .5;
-    filter: blur(50px);
-    top: 60%;
-    left: 60%;
-    transform: translate(-50%, -50%);
-    z-index: 0;
-} */
-
-#landing-page .gap {
-    gap: 30px;
+#landing-page 
+.text-small {
+    top: -80px;
 }
 
-#photos-screen {}
-
-#photos-screen .wrapper .photos {
-    /* background: url(../assets/3d-geometric-abstract-background.jpg); */
-    background: whitesmoke;
-    background-position: center;
-    background-size: cover;
-}
-
-#photos-screen .wrapper .photos.flex-1 {
-    aspect-ratio: 16 / 9;
-}
-
-#navigation-dots {
-    height: 100%;
-}
-
-#navigation-dots .dots {
-    aspect-ratio: 1 / 1;
-    height: 4px;
-    /* border: 1px solid var(--text-secondary); */
-}
-
-#mail {
-    align-items: center;
-}
-
-#footer {
-    overflow: hidden;
+#object {
+    z-index: 99;
+    transform: translate(-50%, 0);
 }

@@ -23,7 +23,7 @@ body {
 }
 
 body.dark-mode {
-    --background: #161616;
+    --background: #111111;
     --fore-background: #424242;
     --text-primary: #FFFFFF;
     --text-secondary: #B0B0B0;
@@ -126,7 +126,7 @@ body.light-mode {
 }
 
 .full-screen-height {
-    height: 100vh; 
+    height: 100vh;
 }
 
 .ultrawide-screen-height {
