@@ -15,6 +15,7 @@
 #preloader-title {
     height: max-content;
     overflow: hidden;
+    z-index: 99;
 }
 
 #preloader-title.active {
@@ -136,7 +137,7 @@ body.dark-mode #themes-mode {
 
 #landing-page 
 .text-small {
-    top: -80px;
+    top: -50px;
 }
 
 #object {

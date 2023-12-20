@@ -25,6 +25,7 @@
     transform: scale(12);
     background: red;
     mix-blend-mode: difference;
+    border: none;
 }
 
 .grow-small {

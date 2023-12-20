@@ -7,7 +7,6 @@ window.addEventListener("scroll", () => {
 
     let navMenuToggle = document.getElementById("menu-toggle");
 
-    preloaderBottomContent.classList.remove("active", window.scrollY >= 1);
     // preloaderThemesMode.classList.remove("active", window.scrollY >= 1);
     preloader.classList.toggle("nav", window.scrollY >= 1);
     preloaderTitle.classList.toggle("navbar-title", window.scrollY >= 1);

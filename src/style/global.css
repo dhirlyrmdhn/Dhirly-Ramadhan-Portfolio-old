@@ -2,7 +2,7 @@
     box-sizing: border-box;
     position: relative;
     font-family: 'Open Sans', sans-serif;
-    transition: .2s;
+    /* transition: .2s; */
     scroll-behavior: smooth;
     z-index: 1;
 }
