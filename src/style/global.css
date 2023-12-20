@@ -2,13 +2,13 @@
     box-sizing: border-box;
     position: relative;
     font-family: 'Open Sans', sans-serif;
-    /* transition: .2s; */
+    transition: .1s;
     scroll-behavior: smooth;
     z-index: 1;
 }
 
 ::selection {
-    background: gray;
+    background: red;
     color: white;
 }
 

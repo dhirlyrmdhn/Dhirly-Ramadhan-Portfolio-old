@@ -5,8 +5,8 @@
     margin-left: -8px;
     margin-top: -8px;
     border-radius: 100%;
-    border: 2px solid red;
-    background: red;
+    border: 2px solid gold;
+    background: gold;
     transition: transform .25s ease,
         .25s ease;
     transform-origin: center center;
@@ -23,7 +23,7 @@
 .grow,
 .grow-small {
     transform: scale(12);
-    background: red;
+    background: gold;
     mix-blend-mode: difference;
     border: none;
 }

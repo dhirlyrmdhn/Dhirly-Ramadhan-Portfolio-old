@@ -2,12 +2,13 @@
     height: 100vh;
     width: 100%;
     background: var(--background);
+    transition: 1s ease-in-out;
     position: fixed;
 }
 
 #preloader.full-screen-height.nav {
     height: 0;
-    transition: .75s ease-in-out;
+    transition: 1s ease-in-out;
     position: fixed;
     width: 100%;
 }
@@ -61,8 +62,9 @@
 }
 
 #scroll-down:hover {
-    background: var(--text-secondary);
+    background: red;
     color: var(--background);
+    border: 1px solid red;
 }
 
 
@@ -79,6 +81,7 @@
     display: none;
     cursor: pointer;
     border-radius: 100px;
+    transition: .2s;
     opacity: 0;
 }
 
