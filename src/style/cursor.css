@@ -1,0 +1,32 @@
+.cursor {
+    position: fixed;
+    width: 16px;
+    height: 16px;
+    margin-left: -8px;
+    margin-top: -8px;
+    border-radius: 100%;
+    border: 2px solid red;
+    background: red;
+    transition: transform .25s ease,
+        .25s ease;
+    transform-origin: center center;
+    pointer-events: none;
+    z-index: 100;
+    /* display: none; */
+}
+
+.hidden {
+    display: none;
+    visibility: hidden;
+}
+
+.grow,
+.grow-small {
+    transform: scale(12);
+    background: red;
+    mix-blend-mode: difference;
+}
+
+.grow-small {
+    transform: scale(2);
+}
