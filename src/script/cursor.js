@@ -45,7 +45,6 @@ cursorScale.forEach(link => {
     })
 })
 
-let myCursor = document.getElementById("sender-cursor");
-myCursor.addEventListener("click", () => {
-    myCursor.classList.toggle("idx2");
-})
+function myCursorFunc() {
+    cursor.classList.toggle("idx2");
+}
