@@ -18,4 +18,8 @@ window.addEventListener("DOMContentLoaded", () => {
         preloaderScrollDown.classList.add("active");
     }, 2000 + 1500);
 
+    setTimeout(() => {
+        window.scrollTo(0, 2);
+    }, 5000);
+
 })
