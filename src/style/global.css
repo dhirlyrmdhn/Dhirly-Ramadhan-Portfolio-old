@@ -154,12 +154,22 @@ body.light-mode {
     color: var(--text-secondary);
 }
 
+.paragraph.large {
+    font-size: 32px;
+    max-width: 1000px;
+    text-align: justify;
+}
+
 .gap-small {
     gap: 8px;
 }
 
 .gap-medium {
     gap: 16px;
+}
+
+.padding-section {
+    padding: 100px 48px;
 }
 
 .padding-medium {
