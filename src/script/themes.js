@@ -7,7 +7,7 @@ function setTheme(theme) {
   const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
   const themesButton = document.getElementById('themes-mode');
 
-  themesButton.title = `Light Mode (Follows System Theme: ${systemTheme})`;
+  themesButton.title = `Follows System Theme: ${systemTheme}`;
 }
 
 setTheme(prefersDarkMode ? 'dark' : 'light');
