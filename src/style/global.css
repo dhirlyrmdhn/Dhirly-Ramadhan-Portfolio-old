@@ -168,6 +168,14 @@ body.light-mode {
     gap: 16px;
 }
 
+.gap-large {
+    gap: 32px;
+}
+
+.gap-extra-large {
+    gap: 48px;
+}
+
 .padding-section {
     padding: 100px 48px;
 }
