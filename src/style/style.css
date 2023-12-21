@@ -129,11 +129,13 @@ body.dark-mode #themes-mode {
 }
 
 #landing-page .text-typhograpy {
-    font-family: 'Roboto Condensed', sans-serif;
+    /* font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Open Sans', sans-serif; */
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
     text-transform: capitalize;
-    font-size: 8vw;
-    margin: -5% 0;
-    letter-spacing: -.25vw;
+    font-size: 10vw;
+    margin: -8% 0;
+    /* letter-spacing: -.25vw; */
 }
 
 #landing-page .text-small {
