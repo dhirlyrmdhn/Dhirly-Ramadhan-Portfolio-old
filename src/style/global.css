@@ -157,7 +157,6 @@ body.light-mode {
 .paragraph.large {
     font-size: 32px;
     max-width: 1000px;
-    /* text-align: justify; */
     text-wrap: pretty;
 }
 
