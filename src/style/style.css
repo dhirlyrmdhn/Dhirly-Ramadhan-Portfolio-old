@@ -62,7 +62,7 @@
 }
 
 #preloader.nav {
-    height: 50px;
+    height: 0;
 }
 
 #preloader.nav .preloader-title.center-children {
