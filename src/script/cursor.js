@@ -29,7 +29,7 @@ window.addEventListener("mouseout", () => {
 })
 window.addEventListener("mouseover", () => {
     cursor.classList.remove("hidden");
-})
+});
 
 cursorScale.forEach(link => {
     link.addEventListener('mouseleave', () => {
@@ -43,8 +43,4 @@ cursorScale.forEach(link => {
             cursor.classList.add('grow-small');
         }
     })
-})
-
-function myCursorFunc() {
-    cursor.classList.toggle("idx2");
-}
+});

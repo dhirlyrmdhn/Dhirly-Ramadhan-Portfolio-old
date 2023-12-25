@@ -1,32 +1,6 @@
 @media screen and (max-width: 767px) {
-    .text-title {
-        font-size: 16px;
-    }
-
-    .preloader .text-small {
-        display: none;
-    }
-
-    .wide-screen-height {
-        aspect-ratio: 3 / 4;
-    }
-
-    .row-responsive {
-        flex-direction: column;
-    }
-
-    .responsive-none {
-        display: none;
-    }
-
-    #landing-page .text-typhograpy {
-        font-size: 30vw;
-        margin: -8%;
-    }
-
-    .paragraph.large {
-        font-size: 24px;
-        max-width: 80vw;
+    #landing-page .typhography {
+        font-size: calc(100vw / 3) !important;
     }
 }
 

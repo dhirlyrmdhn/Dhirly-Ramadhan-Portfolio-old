@@ -11,8 +11,7 @@
         .25s ease;
     transform-origin: center center;
     pointer-events: none;
-    z-index: 100;
-    /* display: none; */
+    z-index: 999;
 }
 
 .hidden {

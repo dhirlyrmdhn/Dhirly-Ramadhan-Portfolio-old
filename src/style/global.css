@@ -1,10 +1,9 @@
 * {
     box-sizing: border-box;
     position: relative;
-    font-family: 'Open Sans', sans-serif;
-    transition: .1s;
+    transition: .2s;
     scroll-behavior: smooth;
-    z-index: 1;
+    font-family: 'Open Sans', sans-serif;
 }
 
 ::selection {
@@ -19,6 +18,7 @@ body {
     padding: 0;
     --small: 8px;
     --medium: 16px;
+    --large: 32px ;
     overflow-x: hidden;
 }
 
@@ -46,10 +46,9 @@ body.light-mode {
     --border: 1px solid #00000014;
 }
 
-
-/* .container {
-    min-height: 200vh;
-} */
+.container {
+    height: 200vh;
+}
 
 .wrapper {
     height: 100%;
@@ -65,16 +64,16 @@ body.light-mode {
     display: flex;
 }
 
-.space-between {
-    justify-content: space-between;
-}
-
 .flex-1 {
     flex: 1;
 }
 
 .flex-2 {
     flex: 2;
+}
+
+.space-between {
+    justify-content: space-between;
 }
 
 .row {
@@ -112,9 +111,19 @@ body.light-mode {
     align-items: end;
 }
 
+.gap-box-small {
+    height: var(--small);
+    width: var(--small);
+}
+
 .gap-box-medium {
-    height: 12px;
-    width: 12px;
+    height: var(--medium);
+    width: var(--medium);
+}
+
+.gap-box-large {
+    height: var(--large);
+    width: var(--large);
 }
 
 .absolute {
@@ -154,30 +163,16 @@ body.light-mode {
     color: var(--text-secondary);
 }
 
-.paragraph.large {
-    font-size: 32px;
-    max-width: 1000px;
-    text-wrap: pretty;
-}
-
 .gap-small {
-    gap: 8px;
+    gap: var(--small);
 }
 
 .gap-medium {
-    gap: 16px;
+    gap: var(--medium);
 }
 
 .gap-large {
-    gap: 32px;
-}
-
-.gap-extra-large {
-    gap: 48px;
-}
-
-.padding-section {
-    padding: 100px 48px;
+    gap: var(--large);
 }
 
 .padding-medium {
@@ -192,22 +187,6 @@ body.light-mode {
     width: 100%;
 }
 
-a.button {
-    text-decoration: none;
-    font-size: 12px;
-    padding: 8px 16px;
-    border: 1px solid gray;
-    border-radius: 24px;
-    background: var(--background);
-    color: var(--text-primary);
-}
-
-a.button.cta {
-    color: var(--background);
-    background: linear-gradient(90deg, pink, aqua);
-    border: none;
-}
-
 .circle {
     border-radius: 100%;
 }
@@ -216,21 +195,15 @@ a.button.cta {
     border: 1px solid var(--text-secondary);
 }
 
-a {
+a.a {
     text-decoration: none;
     color: var(--text-primary);
 }
 
-.text-color-gradient {
-    background: var(--primary-accent);
-    -webkit-background-clip: text;
-    color: transparent;
+.dummy {
+    opacity: 0;
 }
 
 #footer {
     bottom: 0;
-}
-
-.text-full-screen {
-    font-size: 22vw;
 }

@@ -1,25 +1,19 @@
+let preloaderWord = document.querySelectorAll('.preloader-title-word');
+
 window.addEventListener("DOMContentLoaded", () => {
 
-    let preloaderTitle = document.getElementById("preloader-title");
+    setTimeout(() => {
+        let preloaderDummy = document.querySelectorAll('.preloader-dummy');
+        preloaderDummy.forEach(preloaderDummy => {
+            preloaderDummy.classList.add('animation')
+        });
+    }, 200);
 
     setTimeout(() => {
-        preloaderTitle.classList.add("active");
-    }, 500);
-
-    setTimeout(() => {
-        let preloaderBottomContent = document.getElementById("bottom-content");
-        let preloaderThemesMode = document.getElementById("themes-mode");
-        preloaderBottomContent.classList.add("active");
-        preloaderThemesMode.classList.add("active");
-    }, 2000);
-
-    setTimeout(() => {
-        let preloaderScrollDown = document.getElementById("scroll-down");
-        preloaderScrollDown.classList.add("active");
-    }, 2000 + 1500);
-
-    setTimeout(() => {
-        window.scrollTo(0, 2);
-    }, 5000);
-
-})
+        preloaderWord.forEach((preloaderWord, idx) => {
+            setTimeout(() => {
+                preloaderWord.classList.add('animation');
+            }, (idx + 1) * 100);
+        });
+    }, 1200);
+});

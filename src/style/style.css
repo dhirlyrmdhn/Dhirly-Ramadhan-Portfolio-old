@@ -1,151 +1,129 @@
-#preloader.full-screen-height {
-    height: 100vh;
-    width: 100%;
-    background: var(--background);
-    transition: 1s ease;
-    position: fixed;
-}
-
-#preloader.full-screen-height.nav {
-    height: 0;
-    transition: 1s ease;
-    position: fixed;
-    width: 100%;
-}
-
-#preloader-title {
-    height: max-content;
-    overflow: hidden;
+/* Preloader + nav */
+#preloader {
     z-index: 99;
-}
-
-#preloader-title.active {
-    height: max-content;
+    position: fixed;
+    background: var(--background);
     transition: 1s;
 }
 
-#preloader-title.navbar-title.center-children.absolute {
-    position: fixed;
-    top: var(--medium);
-    left: var(--medium);
-    font-size: 16px;
-    height: 22px;
-    transform: translate(0, 0);
+#preloader .preloader-title {
+    font-size: var(--large);
+    transition: 1s;
 }
 
-#bottom-content {
-    opacity: 0;
+#preloader .preloader-dummy {
+    position: absolute;
+    background: #222;
+}
+
+#preloader .preloader-dummy.animation {
+    animation: preloader-dummy 1s;
+}
+
+#preloader .preloader-title {
     overflow: hidden;
 }
 
-#bottom-content .center-parent.space-between {
-    align-items: end;
-    justify-content: space-between;
+#preloader .preloader-title-word {
+    font-size: var(--large);
+    transform: translateY(44px);
 }
 
-#bottom-content .text-small {
-    display: none;
+#preloader .preloader-title-word.animation {
+    transform: translateY(0);
 }
 
-#bottom-content.active {
-    transition: .5s;
-    opacity: 1;
-    overflow: visible;
+#preloader .preloader-title-word.dummy.animation {
+    opacity: 0;
 }
 
-#scroll-down {
-    aspect-ratio: 1 / 1;
+@keyframes preloader-dummy {
+    0% {
+        bottom: 0;
+        height: 0;
+    }
+
+    20% {
+        height: 100vh;
+    }
+
+    50% {
+        height: 100vh;
+    }
+
+    80% {
+        height: 100vh;
+    }
+
+    100% {
+        top: 0;
+        height: 0;
+    }
+}
+
+#preloader.nav {
     height: 50px;
-    color: var(--text-secondary);
-    opacity: 0;
-    cursor: pointer;
 }
 
-#scroll-down:hover {
-    background: red;
-    color: var(--background);
-    border: 1px solid red;
-}
-
-
-#scroll-down.active {
-    opacity: 1;
-}
-
-#nav {
-    position: fixed;
+#preloader.nav .preloader-title.center-children {
+    transition: 1s;
     top: 0;
+    left: 0;
+    transform: translate(0);
+    padding: var(--medium);
 }
 
-#themes-mode {
-    display: none;
-    cursor: pointer;
+#preloader.nav .preloader-title-word {
+    font-size: var(--medium);
+}
+
+#preloader #themes-mode .content {
     border-radius: 100px;
-    transition: .2s;
+    cursor: pointer;
+    gap: 4px;
     opacity: 0;
+    transition: 250ms;
+    transform: scale(0);
 }
 
-#themes-mode.active {
+#preloader.nav #themes-mode .content {
     display: flex;
     opacity: 1;
+    transition: 250ms;
+    transform: scale(1);
 }
 
-body.light-mode #themes-mode {
+body.light-mode #themes-mode .content {
     background: linear-gradient(145deg, #cacaca, #ffffff);
     box-shadow: 5px 5px 10px #bebebe,
         -5px -5px 10px #ffffff;
 }
 
-body.dark-mode #themes-mode {
+body.dark-mode #themes-mode .content {
     background: linear-gradient(145deg, #151515, #191919);
     box-shadow: 5px 5px 10px #090909,
         -5px -5px 10px #252525;
 }
 
-#themes-mode.gap {
-    gap: 4px;
-}
 
-#menu-toggle {
-    right: 0;
-    top: 0;
-    width: 0;
-    overflow: hidden;
-    opacity: 0;
-}
-
-#menu-toggle.active {
-    width: max-content;
-    opacity: 1;
-}
-
-#nav,
-#preloader {
-    z-index: 99;
-}
-
-#landing-page {
-    padding-bottom: 4vw;
-}
-
-#landing-page .text-typhograpy {
-    /* font-family: 'Roboto Condensed', sans-serif;
-    font-family: 'Open Sans', sans-serif; */
+/* Landing Page */
+#landing-page .typhography {
     font-family: 'Sofia Sans Extra Condensed', sans-serif;
     text-transform: capitalize;
-    font-size: 10vw;
+    font-size: calc(100vw / 10);
     margin: -8% 0;
-    /* letter-spacing: -.25vw; */
 }
 
-#landing-page .text-small {
-    top: -50px;
+#landing-page #typhography-image {
+    transform: translate(-50%, 0);
 }
 
-#object {
-    z-index: 99;
-    transform: translate(-50%, -32px);
+#landing-page .text-small.absolute {
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -48px);
 }
 
-/* #about-me .banner {
-} */
+#landing-page .wrapper {
+    padding-bottom: 8vh;
+}
