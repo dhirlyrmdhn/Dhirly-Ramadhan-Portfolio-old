@@ -1,4 +1,9 @@
 @media screen and (max-width: 767px) {
+    #preloader .preloader-title-word {
+        font-size: 24px;
+        transform: translateY(32.8px);
+    }
+
     #landing-page .typhography {
         font-size: 30vw !important;
     }

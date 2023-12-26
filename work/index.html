@@ -4,125 +4,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dhirly Ramadhan</title>
-    <link rel="stylesheet" href="src/style/global.css">
-    <link rel="stylesheet" href="src/style/style.css">
-    <link rel="stylesheet" href="src/style/cursor.css">
-    <link rel="stylesheet" href="src/style/responsive.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Sofia+Sans+Extra+Condensed&display=swap"
-        rel="stylesheet">
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet"> -->
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="shortcut icon" href="src/assets/6.png" type="image/x-icon">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Helvetica;
+        }
+
+        html,
+        body,
+        main {
+            width: 100%;
+            height: 100%;
+        }
+
+        h1 {
+            font-size: 4rem;
+        }
+
+        p {
+            width: 50%;
+            margin: 2rem 0;
+        }
+
+        section {
+            height: 100vh;
+        }
+
+        .container {
+            padding: 5rem;
+        }
+
+        .sticky_parent {
+            height: 500vh;
+        }
+
+        .sticky {
+            overflow: hidden;
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            border: 1px solid red;
+        }
+
+        .scroll_section {
+            position: absolute;
+            top: 0;
+            height: 100%;
+            width: 500vw;
+            will-change: transform;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 5vw;
+        }
+
+        img {
+            width: 400px;
+            height: 80%;
+            object-fit: cover;
+            object-position: center;
+        }
+    </style>
 </head>
 
 <body>
-    <div id="app">
-        <div class="container">
 
-            <section class="preloader full-screen-height" id="preloader">
-                <div class="wrapper padding-medium flex">
-                    <span class="center-children text-title absolute flex center-parent cursor-scale"
-                        id="preloader-title">
-                        <span class="preloader-animation"> 
-                            Dhirly Ramadhan
-                        </span>
+    <main>
+        <section>
+            <div class="container">
+                <h1>
+                    Horizontal Scroll
+                </h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quod et deleniti voluptatum tempora
+                    illo perferendis dolores, magni sequi! Vero ex dolorum consequatur iste omnis nesciunt minima
+                    tenetur reiciendis quia?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quod et deleniti voluptatum tempora
+                    illo perferendis dolores, magni sequi! Vero ex dolorum consequatur iste omnis nesciunt minima
+                    tenetur reiciendis quia?</p>
+            </div>
+        </section>
+
+        <div class="sticky_parent">
+            <div class="sticky">
+                <div class="scroll_section">
+                    <span>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam molestiae voluptatem odio
+                        provident tenetur. Vitae omnis tenetur ullam repellendus quaerat saepe, minus corrupti. Placeat
+                        eaque natus explicabo, sunt dolore voluptate!
+                    </span>
+                    <span>
+                        123
                     </span>
                 </div>
-                <div class="absolute bottom width" id="bottom-content">
-                    <div class="flex center-parent padding-medium">
-                        <div class="text-small">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br>Provident, sed?
-                        </div>
-                        <div class="circle border flex center-parent" id="scroll-down">
-                            <span class="material-symbols-outlined">
-                                south
-                            </span>
-                        </div>
-                        <div class="text-small flex center-parent">
-                            <span class="material-symbols-outlined">
-                                location_on
-                            </span>
-                            Bandung, Indonesia
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <nav class="nav flex gap-medium width justify-content-end padding-medium" id="nav">
-                <div class="menu-toggle absolute" id="menu-toggle">
-                    <div class="padding-medium flex gap-medium">
-                        <span class="material-symbols-outlined">
-                            menu
-                        </span>
-                        <span>
-                            contact
-                        </span>
-                    </div>
-                </div>
-                <div title="" class="flex gap padding-small" id="themes-mode">
-                    <span class="material-symbols-outlined" onclick="setTheme('light')">
-                        light_mode
-                    </span>
-                    <span class="material-symbols-outlined" onclick="setTheme('dark')">
-                        dark_mode
-                    </span>
-                </div>
-            </nav>
-
-            <section class="landing-page full-screen-height" id="landing-page">
-                <span class="absolute center-children cursor-scale" id="object">
-                    <img src="src/assets/5.png" width="250px" alt="" srcset="">
-                </span>
-                <div class="wrapper flex center-parent">
-                    <div class="flex column gap-medium">
-                        <span class="text-small text-center absolute width">
-                            <span class="cursor-scale small">
-                                Hello World! I'm a
-                            </span>
-                        </span>
-                        <span class="flex column text-center gap-minus">
-                            <span class="text-typhograpy text-center cursor-scale">
-                                software
-                            </span>
-                            <span class="text-typhograpy text-center cursor-scale">
-                                engineer
-                            </span>
-                        </span>
-                    </div>
-                </div>
-            </section>
-
-            <section class="about-me-page wide-screen-height width" id="about-me">
-                <div class="flex padding-medium column gap-extra-large">
-                    <div class="width flex center-parent">
-                        <!-- <span class="paragraph large">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora rem inventore minima fuga
-                            beatae deserunt harum maiores consequatur culpa totam.
-                        </span> -->
-                    </div>
-                    <span class="banner center-x width inverse-background"></span>
-                </div>
-            </section>
-
-            <div class="full-screen-height"></div>
-
-            <span class="cursor hidden" id="sender-cursor"></span>
-
+            </div>
         </div>
 
-        <script src="src/script/themes.js"></script>
-        <script src="src/script/preloader.js"></script>
-        <script src="src/script/navbar.js"></script>
-        <script src="src/script/index.js"></script>
-        <script src="src/script/cursor.js"></script>
+        <section>
+            <div class="container">
+                <h1>
+                    About
+                </h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quod et deleniti voluptatum tempora
+                    illo perferendis dolores, magni sequi! Vero ex dolorum consequatur iste omnis nesciunt minima
+                    tenetur reiciendis quia?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quod et deleniti voluptatum tempora
+                    illo perferendis dolores, magni sequi! Vero ex dolorum consequatur iste omnis nesciunt minima
+                    tenetur reiciendis quia?</p>
+            </div>
+        </section>
 
-    </div>
+        <!-- <div class="sticky_parent">
+            <div class="sticky">
+                <div class="scroll_section"></div>
+            </div>
+        </div> -->
+
+        <section>
+            <div class="container">
+                <h1>
+                    End
+                </h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quod et deleniti voluptatum tempora
+                    illo perferendis dolores, magni sequi! Vero ex dolorum consequatur iste omnis nesciunt minima
+                    tenetur reiciendis quia?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quod et deleniti voluptatum tempora
+                    illo perferendis dolores, magni sequi! Vero ex dolorum consequatur iste omnis nesciunt minima
+                    tenetur reiciendis quia?</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+
 </body>
 
 </html>
