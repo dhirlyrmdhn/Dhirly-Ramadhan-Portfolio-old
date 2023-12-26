@@ -83,14 +83,12 @@
     gap: 4px;
     opacity: 0;
     transition: 250ms;
-    transform: scale(0);
 }
 
 #preloader.nav #themes-mode .content {
     display: flex;
     opacity: 1;
     transition: 250ms;
-    transform: scale(1);
 }
 
 body.light-mode #themes-mode .content {
