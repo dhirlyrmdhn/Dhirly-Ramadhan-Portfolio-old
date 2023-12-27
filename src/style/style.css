@@ -26,11 +26,14 @@
 
 #preloader .preloader-title-word {
     font-size: var(--large);
-    transform: translateY(44px);
+    transform: translateY(30px);
+    opacity: 0;
 }
 
 #preloader .preloader-title-word.animation {
     transform: translateY(0);
+    opacity: 1;
+    transition: 250ms;
 }
 
 #preloader .preloader-title-word.dummy.animation {
@@ -63,10 +66,11 @@
 
 #preloader.nav {
     height: 0;
+    transition: 500ms ease-in;
 }
 
 #preloader.nav .preloader-title.center-children {
-    transition: 1s;
+    transition: 500ms ease-in;
     top: 0;
     left: 0;
     transform: translate(0);

@@ -7,7 +7,7 @@ window.addEventListener("DOMContentLoaded", () => {
         preloaderDummy.forEach(preloaderDummy => {
             preloaderDummy.classList.add('animation')
         });
-    }, 200);
+    }, 100);
 
     setTimeout(() => {
         preloaderWord.forEach((preloaderWord, idx) => {
