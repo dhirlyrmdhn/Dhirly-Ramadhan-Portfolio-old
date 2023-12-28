@@ -129,3 +129,15 @@ body.dark-mode #themes-mode .content {
 #landing-page .wrapper {
     padding-bottom: 4vw;
 }
+
+
+/* About Me Page */
+#about-me-page .wrapper {
+    padding: 48px 0;
+    border-top: 1px solid var(--border-color);
+    /* border-bottom: 1px solid var(--border-color); */
+}
+
+#about-me-page .flex-3 .gap-medium {
+    gap: 24px;
+}

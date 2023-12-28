@@ -1,4 +1,16 @@
 @media screen and (max-width: 767px) {
+    .padding-section {
+        padding: 0 24px;
+    }
+
+    .text-large {
+        font-size: 24px;
+    }
+
+    .row-responsive {
+        flex-direction: column;
+    }
+
     #preloader .preloader-title-word {
         font-size: 24px;
         transform: translateY(32.8px);
@@ -6,6 +18,11 @@
 
     #landing-page .typhography {
         font-size: 30vw !important;
+    }
+
+    #about-me-page .flex-1, .flex-2, .flex-3 {
+        height: max-content;
+        flex: content;
     }
 }
 

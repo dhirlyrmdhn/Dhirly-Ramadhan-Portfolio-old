@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
     position: relative;
-    transition: .2s;
+    transition: 200ms;
     scroll-behavior: smooth;
     font-family: 'Open Sans', sans-serif;
 }
@@ -32,6 +32,7 @@ body.dark-mode {
     --primary-button: #1976D2;
     --secondary-button: #FFA000;
     --border: 1px solid #616161;
+    --border-color: #616161;
 }
 
 body.light-mode {
@@ -44,6 +45,7 @@ body.light-mode {
     --primary-button: #2196F3;
     --secondary-button: #FFC107;
     --border: 1px solid #00000014;
+    --border-color: #00000014;
 }
 
 .container {
@@ -70,6 +72,10 @@ body.light-mode {
 
 .flex-2 {
     flex: 2;
+}
+
+.flex-3 {
+    flex: 3;
 }
 
 .space-between {
@@ -150,6 +156,18 @@ body.light-mode {
     aspect-ratio: 16 / 9;
 }
 
+.text-pretty {
+    text-wrap: pretty;
+}
+
+.text-large {
+    font-size: var(--large);
+}
+
+.text-medium {
+    font-size: var(--medium);
+}
+
 .text-title {
     font-size: 24px;
 }
@@ -169,6 +187,10 @@ body.light-mode {
 
 .gap-medium {
     gap: var(--medium);
+}
+
+.padding-section {
+    padding: 0 48px;
 }
 
 .gap-large {
