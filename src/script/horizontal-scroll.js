@@ -1,18 +1,4 @@
 const stickySections = [...document.querySelectorAll('.sticky')];
-// let images = [
-//     '../src/assets/1.png',
-//     '../src/assets/1.png',
-//     '../src/assets/1.png',
-//     '../src/assets/1.png',
-// ];
-
-// images.forEach(img => {
-//     stickySections.forEach(section => {
-//         let image = document.createElement('img');
-//         image.src = img;
-//         section.querySelector('.scroll_section').appendChild(image);
-//     });
-// });
 
 window.addEventListener('scroll', () => {
     for (let i = 0; i < stickySections.length; i++) {

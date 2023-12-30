@@ -112,7 +112,7 @@ body.dark-mode #themes-mode .content {
 #landing-page .typhography {
     font-family: 'Sofia Sans Extra Condensed', sans-serif;
     text-transform: capitalize;
-    font-size: calc(100vw / 10);
+    font-size: calc(100vw / 8);
     margin: -8% 0;
 }
 
@@ -126,10 +126,6 @@ body.dark-mode #themes-mode .content {
     transform: translate(-50%, -48px);
 }
 
-#landing-page .wrapper {
-    padding-bottom: 4vw;
-}
-
 
 /* About Me Page */
 #about-me-page .wrapper {
@@ -140,4 +136,40 @@ body.dark-mode #themes-mode .content {
 
 #about-me-page .flex-3 .gap-medium {
     gap: 24px;
+}
+
+
+/* My Work Page */
+#my-work-page.sticky_parent {
+    height: 200vh;
+}
+
+#my-work-page .sticky {
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    /* border: 1px solid red; */
+}
+
+#my-work-page .scroll_section {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 200vw;
+    will-change: transform;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#my-work-page .wrapper.padding-medium {
+    padding: 0 var(--medium);
+    padding-right: calc(2 * var(--medium));
+}
+
+#my-work-page #gallery-photos {
+    flex: 1;
+    width: auto;
+    background: var(--text-secondary);
 }

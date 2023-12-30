@@ -7,8 +7,7 @@
     border-radius: 100%;
     border: 2px solid red;
     background: red;
-    transition: transform 200ms ease,
-        200ms ease;
+    transition: transform 200ms ease;
     transform-origin: center center;
     pointer-events: none;
     z-index: 999;

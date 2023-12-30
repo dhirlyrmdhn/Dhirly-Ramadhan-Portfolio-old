@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../src/style/global.css">
     <style>
         * {
             margin: 0;
@@ -37,28 +38,28 @@
             padding: 5rem;
         }
 
-        .sticky_parent {
-            height: 500vh;
+        #my-work-page.sticky_parent {
+            height: 200vh;
         }
 
-        .sticky {
+        #my-work-page .sticky {
             overflow: hidden;
             position: sticky;
             top: 0;
             height: 100vh;
-            border: 1px solid red;
+            /* border: 1px solid red; */
         }
 
-        .scroll_section {
+        #my-work-page .scroll_section {
             position: absolute;
             top: 0;
             height: 100%;
-            width: 500vw;
+            width: 200vw;
             will-change: transform;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 0 5vw;
+            /* padding: 0 5vw; */
         }
 
         img {
@@ -67,6 +68,18 @@
             object-fit: cover;
             object-position: center;
         }
+
+        #my-work-page .wrapper.padding-medium {
+            padding: 0 16px;
+            padding-right: 32px;
+        }
+
+        #my-work-page #gallery-photos {
+            flex: 1;
+            width: auto;
+            /* background: var(--text-secondary); */
+            background: #222;
+        }
     </style>
 </head>
 
@@ -74,22 +87,7 @@
 
     <main>
 
-        <div class="sticky_parent">
-            <div class="sticky">
-                <div class="scroll_section">
-                    <span>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam molestiae voluptatem odio
-                        provident tenetur. Vitae omnis tenetur ullam repellendus quaerat saepe, minus corrupti. Placeat
-                        eaque natus explicabo, sunt dolore voluptate!
-                    </span>
-                    <span>
-                        123
-                    </span>
-                </div>
-            </div>
-        </div>
-
-        <!-- <section>
+        <section>
             <div class="container">
                 <h1>
                     About
@@ -101,7 +99,65 @@
                     illo perferendis dolores, magni sequi! Vero ex dolorum consequatur iste omnis nesciunt minima
                     tenetur reiciendis quia?</p>
             </div>
-        </section> -->
+        </section>
+
+        <div class="sticky_parent" id="my-work-page">
+            <div class="sticky">
+                <div class="scroll_section">
+                    <div class="wrapper padding-medium flex column">
+                        <div class="flex-1 flex" id="gallery-content">
+                            <div class="wrapper center-justify-parent flex gap-medium">
+                                <div class="photos screen-height" id="gallery-photos">
+                                    
+                                </div>
+                                <div class="photos screen-height" id="gallery-photos">
+                                    
+                                </div>
+                                <div class="photos screen-height" id="gallery-photos">
+                                    
+                                </div>
+                                <div class="photos screen-height" id="gallery-photos">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="width padding-medium-y text-top">
+                            <span>
+                                hi
+                            </span>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section>
+            <div class="container">
+                <h1>
+                    About
+                </h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quod et deleniti voluptatum tempora
+                    illo perferendis dolores, magni sequi! Vero ex dolorum consequatur iste omnis nesciunt minima
+                    tenetur reiciendis quia?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quod et deleniti voluptatum tempora
+                    illo perferendis dolores, magni sequi! Vero ex dolorum consequatur iste omnis nesciunt minima
+                    tenetur reiciendis quia?</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h1>
+                    About
+                </h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quod et deleniti voluptatum tempora
+                    illo perferendis dolores, magni sequi! Vero ex dolorum consequatur iste omnis nesciunt minima
+                    tenetur reiciendis quia?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quod et deleniti voluptatum tempora
+                    illo perferendis dolores, magni sequi! Vero ex dolorum consequatur iste omnis nesciunt minima
+                    tenetur reiciendis quia?</p>
+            </div>
+        </section>
     </main>
 
     <script src="app.js"></script>

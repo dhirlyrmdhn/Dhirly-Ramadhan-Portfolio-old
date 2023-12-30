@@ -6,10 +6,39 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-::selection {
+/* ::selection {
     background: red;
     color: white;
 }
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+    height: 8px;
+} */
+
 
 body {
     background-color: var(--background);
@@ -97,6 +126,10 @@ body.light-mode {
 
 .center-align-parent {
     justify-content: center;
+}
+
+.center-justify-parent {
+    align-items: center;
 }
 
 .center-children {
@@ -199,6 +232,10 @@ body.light-mode {
 
 .padding-medium {
     padding: var(--medium);
+}
+
+.padding-medium-y {
+    padding: var(--medium) 0;
 }
 
 .padding-small {

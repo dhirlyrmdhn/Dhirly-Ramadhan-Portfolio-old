@@ -20,9 +20,16 @@
         font-size: 30vw !important;
     }
 
-    #about-me-page .flex-1, .flex-2, .flex-3 {
+    #about-me-page .flex-1,
+    .flex-2,
+    .flex-3 {
         height: max-content;
         flex: content;
+    }
+
+    #my-work-page .wrapper.padding-medium {
+        padding: 0 var(--medium);
+        /* padding-right: none; */
     }
 }
 
