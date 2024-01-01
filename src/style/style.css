@@ -3,7 +3,7 @@
     z-index: 99;
     position: fixed;
     background: var(--background);
-    transition: 1s;
+    transition: 500ms;
 }
 
 #preloader .preloader-title {
