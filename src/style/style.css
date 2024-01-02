@@ -168,8 +168,15 @@ body.dark-mode #themes-mode .content {
     padding-right: calc(2 * var(--medium));
 }
 
-#my-work-page #gallery-photos {
-    flex: 1;
+#my-work-page .gallery-photos {
     width: auto;
+    height: auto;
+    flex: 1;
     background: var(--text-secondary);
+}
+
+#gallery-content .divider {
+    height: 100%;
+    width: calc(100% / 2);
+    gap: 16px;
 }

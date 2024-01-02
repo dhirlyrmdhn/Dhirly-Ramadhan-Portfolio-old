@@ -47,7 +47,7 @@ body {
     padding: 0;
     --small: 8px;
     --medium: 16px;
-    --large: 32px ;
+    --large: 32px;
     overflow-x: hidden;
 }
 
@@ -228,6 +228,10 @@ body.light-mode {
 
 .gap-large {
     gap: var(--large);
+}
+
+.padding-large {
+    padding: var(--large);
 }
 
 .padding-medium {
